@@ -10,6 +10,10 @@ class Blog extends BaseController
             'meta_title' => 'CodeIgniter 4 Blog',
             'title' => 'Our Blog'
         ];
+
+        $posts = ['Title 1', 'Title 2', 'Title 3'];
+        $data['posts'] = $posts;
+        
         echo view('templates/header', $data);
         echo view('blog');
         echo view('templates/footer');
